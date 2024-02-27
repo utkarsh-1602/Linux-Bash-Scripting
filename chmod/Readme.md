@@ -38,3 +38,6 @@ chmod [options] mode file
 `--preserve-root`: This option prevents chmod from changing the permissions of / (root) and its subdirectories.
 
 
+
+## example
+- run `nano myscript.sh` so it will create a new file. type `ls` inside the nano editor, save the file and exit from nano editor. after that to add execute permission, run `sudo chmod +x myscript.sh` then to execute the file run `./myscript.sh` and it will perform the action `ls` in the current directory, the action which you've added in the nano editor. 

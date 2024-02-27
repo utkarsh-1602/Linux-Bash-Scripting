@@ -12,6 +12,21 @@
 - It allows users to execute commands, run scripts, and manage files and processes.
 - The shell acts as an intermediary between the user and the operating system kernel.
 
+## Popular Shells in Linux
+Some popular shells in Linux include:
+
+1. **Bash (Bourne Again Shell)**: This is the default shell for most Linux distributions. It's a powerful and feature-rich shell with a wide range of capabilities.
+
+2. **Zsh (Z Shell)**: Zsh is an extended version of the Bourne shell (sh) with many additional features and improvements, such as advanced tab completion and customization options.
+
+3. **Fish (Friendly Interactive Shell)**: Fish is designed to be user-friendly with features like syntax highlighting, autosuggestions, and easy-to-use scripting syntax.
+
+4. **Ksh (Korn Shell)**: Ksh is another powerful shell that's compatible with the Bourne shell syntax but includes additional features for scripting and interactive use.
+
+5. **Dash**: Dash is a lightweight shell optimized for executing scripts quickly. It's often used as the default system shell for boot scripts and other system-level tasks.
+
+
+
 ## Text Editor for Bash scripting
 When it comes to writing Bash scripts, you can use any text editor that you're comfortable with. Here are a few popular options.
 1. **Vim**: Vim is a powerful and highly configurable text editor that is often preferred by experienced users due to its efficiency and versatility.
@@ -46,3 +61,18 @@ which bash
 nano myscript.sh
 ```
 
+6. The `cat` command in Unix-like operating systems is used to concatenate and display the contents of files. It is short for "concatenate".
+```shell
+cat [options] [file(s)]
+```
+- **options**: These are optional parameters that modify the behavior of the cat command. Some common options include -n (number all output lines) and -b (number non-empty output lines).
+
+- **file(s)**: These are the file or files whose contents you want to display. If no files are specified, cat will read from the standard input
+
+## shebang/hashbang
+
+In Unix-like operating systems, including Linux, it's used at the beginning of a script file to indicate which interpreter should be used to execute the script.
+
+`#!`: This is called the shebang or hashbang. It's a special character sequence that tells the system that the following path indicates the interpreter to use.
+
+- for example, `#!/bin/bash` specifically tells the system to use the Bash shell interpreter to execute the script. When you run a script with this shebang, the operating system looks for the Bash interpreter located at `/bin/bash` and then runs the script using that interpreter.
