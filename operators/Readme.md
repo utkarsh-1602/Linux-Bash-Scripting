@@ -26,4 +26,9 @@ refer Examples: [Arithmetic Operators](arithmetic-operators/myscript.sh)
 refer Examples: [Comparison Operators](comparison-operators/myscript.sh)
 
 
-## 
+## Logical Operators:
+
+1. Logical AND: `&&`
+2. Logical OR: `||`
+3. Logical NOT: `!`
+
