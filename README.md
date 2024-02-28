@@ -86,6 +86,22 @@ man ls
 This would display the manual page for the ls command, which is used for listing directory contents.
 
 
+9. In Bash, the `-d` option is used in various commands to check if a particular file or directory exists. It is often used in conditional statements to perform certain actions based on whether a directory exists or not.
+
+```bash
+#!/bin/bash
+
+directory="/path/to/directory"
+
+if [ -d "$directory" ]; then
+    echo "Directory exists"
+else
+    echo "Directory does not exist"
+fi
+
+```
+
+
 ## shebang/hashbang
 
 In Unix-like operating systems, including Linux, it's used at the beginning of a script file to indicate which interpreter should be used to execute the script.

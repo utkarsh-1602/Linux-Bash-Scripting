@@ -10,7 +10,7 @@ chmod [options] mode file
 
 ## Here are some common options used with the chmod command:
 
-`+x`: option in the chmod command is used to add the execute permission to a file. Specifically, it allows the file to be executed as a program or script.
+`+x`: option in the chmod command is used to add the permission to execute a file. Specifically, it allows the file to be executed as a program or script.
 - For example, if you have a file named `script.sh` and you want to add execute permission to it, you can use the following command. 
 
         chmod +x myscript.sh
