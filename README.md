@@ -86,8 +86,6 @@ man ls
 This would display the manual page for the ls command, which is used for listing directory contents.
 
 
-
-
 ## shebang/hashbang
 
 In Unix-like operating systems, including Linux, it's used at the beginning of a script file to indicate which interpreter should be used to execute the script.
