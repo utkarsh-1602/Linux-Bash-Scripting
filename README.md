@@ -35,6 +35,27 @@ When it comes to writing Bash scripts, you can use any text editor that you're c
 
 3. **Nano**: Nano is a simple and user-friendly text editor that is suitable for beginners. It provides basic text editing capabilities and is easy to use for writing Bash scripts.
 
+
+## Run a Bash Script
+
+### Method 1
+1. To run a bash script `myscript.sh`, firstly you need to add the permission for the execution by doing 
+```bash 
+chmod +x myscript.sh
+```
+2. Then you can run the script by running 
+```bash 
+./myscript.s`
+```
+
+## Method 2
+1. To run a bash script `myscript.sh`, If your script starts with a shebang line (e.g., `#!/bin/bash`), you can explicitly invoke the interpreter and provide the script as an argument.
+```bash
+bash myscript.sh
+```
+then it will execute immediately.
+
+
 ## Commands 
 
 1. `echo` command is used in Unix-like operating systems (such as Linux) and Windows command prompt to display a line of text/string on the standard output.
@@ -101,6 +122,31 @@ fi
 
 ```
 
+10. In Bash, `sleep` is a command used to delay the execution of a script or a command for a specified amount of time. It's commonly used when you want to pause the execution of a script for a certain duration.
+
+- for example, this command will pause the execution for 5 seconds
+```bash
+#!/bin/bash
+
+sleep 20
+echo "Hello world"
+```
+
+- this command will pause the execution for 2 minutes
+```bash
+#!/bin/bash
+
+sleep 2m
+echo "Hello world"
+```
+
+- this command will pause the execution for 1 hour and 3o minutes 
+```bash
+#!/bin/bash
+
+sleep 1h30m
+echo "Hello world"
+```
 
 ## shebang/hashbang
 
