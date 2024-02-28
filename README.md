@@ -69,6 +69,25 @@ cat [options] [file(s)]
 
 - **file(s)**: These are the file or files whose contents you want to display. If no files are specified, cat will read from the standard input
 
+7. In Bash, the `command -v` command is used to display the location of a command that would be executed if it were called from the command line. It's a useful way to check the existence and location of a command in the system's PATH.
+```shell
+command -v ls
+```
+This would output the path to the `ls` command, which is typically `/bin/ls`
+
+8. The `man` command in bash is a command-line utility for displaying the manual pages (documentation) of other commands in Unix-like operating systems. The name "`man`" stands for "manual". Here's how you typically use it:
+```bash
+man [option] [command]
+```
+- For example:
+```bash
+man ls
+```
+This would display the manual page for the ls command, which is used for listing directory contents.
+
+
+
+
 ## shebang/hashbang
 
 In Unix-like operating systems, including Linux, it's used at the beginning of a script file to indicate which interpreter should be used to execute the script.
@@ -76,3 +95,26 @@ In Unix-like operating systems, including Linux, it's used at the beginning of a
 `#!`: This is called the shebang or hashbang. It's a special character sequence that tells the system that the following path indicates the interpreter to use.
 
 - for example, `#!/bin/bash` specifically tells the system to use the Bash shell interpreter to execute the script. When you run a script with this shebang, the operating system looks for the Bash interpreter located at `/bin/bash` and then runs the script using that interpreter.
+
+
+## Creating a Bash Script to install a package if its not already installed
+here we will create a bash script to check whether the package `htop` is installed or not 
+
+**checkout this example** : [htop-package-availability](htop/myscript.sh)
+
+
+## `sudo apt update`
+The sudo apt update command is used to download or refresh the local package index and to provide the system with the most recent information about available packages from the repositories. By updating the package index, any software installation or upgrades can be performed based on the latest package information.
+
+## Difference between `which` and `command -v` 
+which and command -v are both used to determine the location of an executable file in the system's PATH. However, they operate slightly differently:
+
+1. `which`
+which is a standalone command used specifically for finding the location of executable files in the user's PATH.
+It is not specified by POSIX and may not be available on all systems, though it is commonly found in Unix-like operating systems.
+It's typically used interactively by users to determine the full path of a command.
+
+2. `command -v`
+command -v is a built-in shell command in Bash and other POSIX-compliant shells.
+Apart from locating executable files, command -v also checks whether a command is defined as a shell function or alias.
+It's more portable across different systems compared to which because it's part of the shell itself.
