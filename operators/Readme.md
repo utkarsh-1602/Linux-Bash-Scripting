@@ -12,8 +12,18 @@ In Bash, operators are used for various purposes, including **arithmetic** opera
 6. Increment: `((++))`
 7. Decrement: `((--))`
 
-```bash
-a=5
-b=3
-echo $((a + b))   # Output: 8
-```
+refer Examples: [Arithmetic Operators](arithmetic-operators/myscript.sh)
+
+## Comparison Operators:
+
+1. Equal to: `==`
+2. Not equal to: `!=`
+3. Greater than: `>`
+4. Less than: `<`
+5. Greater than or equal to: `-ge`
+6. Less than or equal to: `-le`
+
+refer Examples: [Comparison Operators](comparison-operators/myscript.sh)
+
+
+## 
