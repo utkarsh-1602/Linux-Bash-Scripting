@@ -16,7 +16,7 @@ else
     echo "The variable does not equal to 200"
 fi
 
-# check if the files exist in the directory or not 
+# check if the file exist in the home directory 
 if [ -f ~/myfile ] 
 then 
     echo "The file exists" 
@@ -24,3 +24,10 @@ else
     echo "The file does not exist" 
 fi
 
+
+# check if the file exist in the current directory
+if [ -f ./myfile ]; then 
+    echo "The file exists"
+else 
+    echo "The file does not exist" 
+fi 

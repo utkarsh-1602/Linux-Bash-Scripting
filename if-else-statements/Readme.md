@@ -13,3 +13,30 @@ fi
 checkout example: [If-else Statements](myscript.sh)
 
 
+
+## To check for a file in current directory 
+
+```bash
+# Check for file in the current directory
+if [ -f ./myfile ]
+then 
+    echo "The file exists in the current directory"
+else
+    echo "The file does not exist in the current directory"
+fi
+```
+
+## To check for a file in Home directory
+
+```bash
+# Check for file in the home directory
+if [ -f ~/myfile ] 
+then 
+    echo "The file exists in the home directory" 
+else
+    echo "The file does not exist in the home directory" 
+fi
+
+```
+
+> Note: In Bash scripting, `-f` is a **file test operator** that checks whether a given path exists and is a regular file.
